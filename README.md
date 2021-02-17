@@ -1,6 +1,6 @@
 # Deep-Shape-from-Template
 Shape-from-Template (SfT) solves 3D vision from a single image and a deformable 3D object model, called a template. Concretely, SfT computes registration (the correspondence between the template and the image) and reconstruction (the depth in camera frame). It constrains the object deformation to quasi-isometry. Real-time and automatic SfT represents an open problem for complex objects and imaging conditions. We present four contributions to address core unmet challenges to realise SfT with a Deep Neural Network (DNN). First, we propose a novel DNN called DeepSfT, which encodes the template in its weights and hence copes with highly complex templates. Second, we propose a semi-supervised training procedure to exploit real data. This is a practical solution to overcome the render gap that occurs when training only with simulated data. Third, we propose a geometry adaptation module to deal with different cameras at training and inference. Fourth, we combine statistical learning with physics-based reasoning. DeepSfT runs automatically and in real-time and we show with numerous experiments and an ablation study that it consistently achieves a lower 3D error than previous work. It outperforms in generalisation and achieves an unprecedented performance with wide-baseline, occlusions, illumination changes, weak texture and blur.
-![Alt text](diagrama_tof.png?raw=true "System Blocks Diagram")
+![Alt text](diagrama_deepsft.png?raw=true "System Blocks Diagram")
 # Working Conditions
 This code runs on Tensorflow 2.0
 # Train
